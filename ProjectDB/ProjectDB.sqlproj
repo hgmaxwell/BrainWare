@@ -61,10 +61,15 @@
     <Folder Include="Stored Procedures" />
   </ItemGroup>
   <ItemGroup>
-    <Build Include="Tables\company.sql" />
-    <Build Include="Tables\product.sql" />
-    <Build Include="Tables\order.sql" />
-    <Build Include="Tables\orderproduct.sql" />
+    <Build Include="Tables\Company.sql" />
+    <Build Include="Tables\Product.sql" />
+    <Build Include="Tables\Order.sql" />
+    <Build Include="Tables\OrderProduct.sql" />
+    <Build Include="Tables\AuditOrder.sql" />
+    <Build Include="Tables\AuditCompany.sql" />
+    <Build Include="Tables\AuditProduct.sql" />
+    <Build Include="Tables\AuditOrderProduct.sql" />
+    <Build Include="Stored Procedures\GetOrderProductsByCompanyId.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="ProjectDB.refactorlog" />
