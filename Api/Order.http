@@ -1,0 +1,9 @@
+@API_HostAddress = https://localhost:7234/api
+
+GET {{API_HostAddress}}/Order/1
+Accept: application/json
+
+###
+
+GET {{API_HostAddress}}/Order/2
+Accept: application/json
