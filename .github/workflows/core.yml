@@ -24,8 +24,10 @@ jobs:
         dotnet-version: 8.0.x
     - name: Restore dependencies
       run: dotnet restore
+    - name: Install MSBuild
+      run: choco install microsoft-build-tools
     - name: Build API
-      run: dotnet build --no-restore
+      run: msbuild /p:Configuration=Release /p:Platform="Any CPU" /t:Build /p:RestoreDuringBuild=false
     - name: Test API
       run: dotnet test --no-build --verbosity normal
     
