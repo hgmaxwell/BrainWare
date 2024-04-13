@@ -24,12 +24,10 @@ jobs:
         dotnet-version: 8.0.x
     - name: Restore dependencies
       run: dotnet restore
-    - name: Setup MSBuild
-      uses: microsoft/setup-msbuild@v2
     - name: Build API
-      run: msbuild /p:Configuration=Release /p:Platform="Any CPU" /t:Build /p:RestoreDuringBuild=false
+      run: dotnet build --no-restore
     - name: Test API
-      run: dotnet test --filter FullyQualifiedName~BrainWare.Api.UnitTests --no-build --verbosity normal
+      run: dotnet test --no-build --verbosity normal
     
     - name: Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v3
