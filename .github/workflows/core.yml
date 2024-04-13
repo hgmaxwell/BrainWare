@@ -29,16 +29,18 @@ jobs:
     - name: Test API
       run: dotnet test --no-build --verbosity normal
 
-    - name: Change to web-app directory
-      run: cd web-app
     - name: Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v3
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
+        cache-dependency-path: 'web-app/package-lock.json'
     - name: Install web app
       run: npm ci
+      working-directory: web-app
     - name: Build web app
       run: npm run build --if-present
+      working-directory: web-app
     - name: Test web app
       run: npm test
+      working-directory: web-app
