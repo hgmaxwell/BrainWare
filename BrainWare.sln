@@ -3,8 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.9.34616.47
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "ProjectDB", "ProjectDB\ProjectDB.sqlproj", "{58D1E657-AA21-497F-BA9C-634D6DA2D921}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{5FC57735-E720-490F-AB66-1EEC6F7A26B4}"
 	ProjectSection(SolutionItems) = preProject
 		README.md = README.md
@@ -12,7 +10,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Api", "Api\Api.csproj", "{CFCA4167-66BE-41AC-BC2B-C2A48F06B558}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Api.UnitTests", "Api.UnitTests\Api.UnitTests.csproj", "{579029D1-906E-4CB5-B34A-2668CF5EF87B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Api.UnitTests", "Api.UnitTests\Api.UnitTests.csproj", "{579029D1-906E-4CB5-B34A-2668CF5EF87B}"
 	ProjectSection(ProjectDependencies) = postProject
 		{CFCA4167-66BE-41AC-BC2B-C2A48F06B558} = {CFCA4167-66BE-41AC-BC2B-C2A48F06B558}
 	EndProjectSection
@@ -23,12 +21,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{58D1E657-AA21-497F-BA9C-634D6DA2D921}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{58D1E657-AA21-497F-BA9C-634D6DA2D921}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{58D1E657-AA21-497F-BA9C-634D6DA2D921}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
-		{58D1E657-AA21-497F-BA9C-634D6DA2D921}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{58D1E657-AA21-497F-BA9C-634D6DA2D921}.Release|Any CPU.Build.0 = Release|Any CPU
-		{58D1E657-AA21-497F-BA9C-634D6DA2D921}.Release|Any CPU.Deploy.0 = Release|Any CPU
 		{CFCA4167-66BE-41AC-BC2B-C2A48F06B558}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{CFCA4167-66BE-41AC-BC2B-C2A48F06B558}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CFCA4167-66BE-41AC-BC2B-C2A48F06B558}.Release|Any CPU.ActiveCfg = Release|Any CPU
